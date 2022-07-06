@@ -20,4 +20,4 @@ let divSelection = d3.select("body")
 
 divSelection
 .data(videoData)
-.text(function(d) {return d})
+.text(function(d) {return d.title + ": " + d.amount + " views"}); 
