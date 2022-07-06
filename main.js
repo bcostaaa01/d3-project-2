@@ -20,4 +20,6 @@ let divSelection = d3.select("body")
 
 divSelection
 .data(videoData)
-.text(function(d) {return d.title + ": " + d.amount + " views"}); 
+.text(function(d) {return d.title + ": " + d.amount + " views"})
+.attr("class", "bar")
+.style("width", function(d) {return d.amount * 50 + "px"})
