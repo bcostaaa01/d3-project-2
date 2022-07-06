@@ -22,4 +22,4 @@ divSelection
 .data(videoData)
 .text(function(d) {return d.title + ": " + d.amount + " views"})
 .attr("class", "bar")
-.style("width", function(d) {return d.amount * 50 + "px"})
+.style("width", function(d) {return 50 * d.amount + "px"})
